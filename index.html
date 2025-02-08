@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <i class="fa-solid fa-circle-half-stroke"></i>
+    <div class="calculator">
+        <div class="display">
+            <i class="fa-regular fa-clock"></i>
+            <i class="fa-solid fa-calculator" style="display: none;"></i>
+            <input type="text" id="input">
+            <div id="result"></i></div>
+        </div>
+        <div class="buttons">
+            <button id="1" value="nd">2<sup>nd</sup></button>
+            <button id="2" value="π">&pi;</button>
+            <button id="3" value="e">e</button>
+            <button id="4" value="cl">C</button>
+            <button id="5" value="bs"><i class="fa-solid fa-delete-left"></i></button>
+            <button id="6" value="^2">x<sup>2</sup></button>
+            <button id="7" value="sin(">sin</button>
+            <button id="8" value="cos(">cos</button>
+            <button id="9" value="tan(">tan</button>
+            <button id="10" value="%">%</button>
+            <button id="11" value="√(">&radic;x</button>
+            <button id="12" value="(">&lpar;</button>
+            <button id="13" value=")"> &rpar;</button>
+            <button id="14" value="!">n&excl;</button>
+            <button id="15" value="/"> &divide;</button>
+            <button id="16" value="^(">x<sup>y</sup></button>
+            <button id="17" value="7">7</button>
+            <button id="18" value="8">8</button>
+            <button id="19" value="9">9</button>
+            <button id="20" value="x">&times;</button>
+            <button id="21" value="abs(">|x|</sup></button>
+            <button id="22" value="4">4</button>
+            <button id="23" value="5">5</button>
+            <button id="24" value="6">6</button>
+            <button id="25" value="-">&minus;</button>
+            <button id="26" value="log(">log</button>
+            <button id="27" value="1">1</button>
+            <button id="28" value="2">2</button>
+            <button id="29" value="3">3</button>
+            <button id="30" value="+">&plus;</button>
+            <button id="31" value="ln(">ln</button>
+            <button id="32" value="(-"><sup>+</sup>/-</button>
+            <button id="33" value="0">0</button>
+            <button id="34" value=".">.</button>
+            <button id="35" value="=">&equals;</button>
+        </div>
+        <div class="history-view" style="display:none;">
+            <hr>
+            <div id="history-content"></div>
+            <button id="clear-history">Clear History</button>
+        </div>
+    </div>
+    <script type="module" src="script/index.js"></script>
+    <script>
+        document.getElementById("35").style.backgroundColor = "lightblue";
+        document.getElementById("17").style.backgroundColor = "white";
+        document.getElementById("18").style.backgroundColor = "white";
+        document.getElementById("19").style.backgroundColor = "white";
+        document.getElementById("22").style.backgroundColor = "white";
+        document.getElementById("23").style.backgroundColor = "white";
+        document.getElementById("24").style.backgroundColor = "white";
+        document.getElementById("27").style.backgroundColor = "white";
+        document.getElementById("28").style.backgroundColor = "white";
+        document.getElementById("29").style.backgroundColor = "white";
+        document.getElementById("33").style.backgroundColor = "white";
+    </script>
+</body>
+</html>
